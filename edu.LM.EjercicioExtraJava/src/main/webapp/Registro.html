@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	
+</head>
+
+<body>
+
+	<form onsubmit="return maestra()">
+		<table style="border: 1px solid black">
+			<caption>REGISTRO</caption>
+			<tbody>
+				<tr>
+					<td><label for="nombre1">Nombre:<label>
+								<input required  type="text" id="nombre1" name="nombre"></td>
+					<td><label>Apellidos:<label>
+								<input required  type="text" id="apellido"></td>
+				</tr>
+				<tr>
+					<td>
+						<label>
+							Pregunta:
+						</label>
+						<select id="pregunta" name="Pregunta">
+							<option value disabled selected placeholder:="0">Elija una opcion
+							</option>
+							<option value="¿Cual es el nombre de su mascota?">¿Cual es el nombre de su mascota?</option>
+							<option value="¿Donde has nacido?">¿Donde has nacido?</option>
+							<option value="¿Mejor amigo de la infancia?">¿Mejor amigo de la infancia?</option>
+
+						</select>
+
+					</td>
+					<td><label>Respuesta:<label>
+								<input id="respuesta" type="text"></td>
+				</tr>
+				<tr>
+					<td><label>email:<label>
+								<input id="email" type="email"></td>
+				</tr>
+				<tr>
+					<td><label>Contraseña:<label>
+								<input id="pass1" type="password"></td>
+					<td><label>Contraseña:<label>
+								<input id="pass2" type="password"></td>
+				</tr>
+				
+			</tbody>
+		</table>
+		<button type="submit" onclick="agregar()"> Registrarse</button>
+	</form>
+	<button type="button" onclick="agregar()"> w</button>
+
+<script src="java.js"></script>
+</body>
+
+</html>
